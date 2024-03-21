@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    .logo-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    .logo {
+      width: calc(12.5% - 20px); /* 8 logos per line with 20px gap */
+      margin: 10px; /* Adjust margin as needed */
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .logo img {
+      width: 100%;
+      height: auto;
+    }
+
+    .logo:hover {
+      transform: scale(1.1);
+    }
+  </style>
+  <title>Logo Gallery with Hover</title>
+</head>
+<body>
+
+  <div class="logo-container">
+    <!-- Replace the image URLs and hrefs with your own logo URLs and links -->
+    <div class="logo">
+      <a href="logo1_url" target="_blank">
+        <img src="advance.jpg" alt="Logo 1">
+      </a>
+    </div>
+    <div class="logo">
+      <a href="logo2_url" target="_blank">
+        <img src="logo.jpg" alt="Logo 2">
+      </a>
+    </div>
+    <div class="logo">
+      <a href="logo3_url" target="_blank">
+        <img src="logo.jpg" alt="Logo 3">
+      </a>
+    </div>
+    <!-- Add more logo divs as needed -->
+
+    <!-- Example of more logos on the same line -->
+    <div class="logo">
+      <a href="logo4_url" target="_blank">
+        <img src="logo.jpg" alt="Logo 4">
+      </a>
+    </div>
+    <div class="logo">
+      <a href="logo5_url" target="_blank">
+        <img src="logo.jpg" alt="Logo 5">
+      </a>
+    </div>
+    <div class="logo">
+      <a href="logo6_url" target="_blank">
+        <img src="logo.jpg" alt="Logo 6">
+      </a>
+    </div>
+    <!-- Add more logo divs as needed -->
+
+    <!-- Another line of logos -->
+    <!-- Add more logo divs as needed -->
+
+  </div>
+
+</body>
+</html>

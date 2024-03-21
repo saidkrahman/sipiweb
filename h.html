@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    .slider-container {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+    }
+
+    .logo-wrapper {
+      white-space: nowrap;
+      animation: slide 20s linear infinite; /* Adjust the duration as needed */
+    }
+
+    .logo {
+      display: inline-block;
+      margin-right: 20px; /* Adjust margin as needed */
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .logo img {
+      width: 100px; /* Adjust the width of the logos as needed */
+      height: auto;
+    }
+
+    .logo:hover {
+      transform: scale(1.2);
+    }
+
+    @keyframes slide {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+  <title>Continuous Logo Slider</title>
+</head>
+<body>
+
+  <div class="slider-container">
+    <div class="logo-wrapper">
+      <!-- Repeat this div for each logo -->
+      <div class="logo">
+        <a href="logo1_url" target="_blank">
+          <img src="img/placement-cell/advance.png" alt="Logo 1">
+        </a>
+      </div>
+
+      <div class="logo">
+        <a href="logo2_url" target="_blank">
+          <img src="img/placement-cell/akter.jpg" alt="Logo 2">
+        </a>
+      </div>
+	  
+      <!-- Add more logo divs as needed -->
+    </div>
+  </div>
+
+</body>
+</html>
